@@ -63,7 +63,12 @@ body {
 
 .menu {
 	display: inline-block;
-	margin-left: 190px;
+	margin-left: 270px;
+	margin-bottom: 30px;
+}
+
+.list-menu {
+	height: 34px;
 }
 
 .list-menu li {
@@ -85,6 +90,52 @@ body {
 }
 /*END HEADER*/
 
-.image-lawyer {
-	background-image: url('');
+.first-section {
+	height: 100vh;
+}
+
+.welcome-section {
+	height: calc(100vh - 119px);
+	background: url(../image/lawyer.png), url(../image/gradient.png) repeat-x;
+    background-blend-mode: multiply;
+}
+
+.welcome-info {
+	position: absolute;
+	bottom: 140px;
+}
+.welcome-info * {
+	vertical-align: bottom;
+}
+
+.welcome-info h1 {
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 3px;
+	font-size: 55px;
+	color: #ffffff;
+}
+
+.welcome-info h2 {
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.welcome-info button {
+	display: inline-block;
+	margin-left: 330px;
+	background-color:#e8bf5d;
+	padding: 20px 50px;
+	border: none;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+.welcome-info h1, h2 {
+	margin-left: 120px;
+	border-left: 2px solid #e8bf5d;
+	padding-left: 15px;
+}
+
+.name-lawyer {
+	display: inline-block;
 }
