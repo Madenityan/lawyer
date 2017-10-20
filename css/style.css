@@ -1,4 +1,4 @@
-/*RESET */
+RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +54,8 @@ button {
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	counter-reset: section;
+	margin: 0; 
 }
 
 /*HEADER*/
@@ -64,8 +66,8 @@ body {
 
 .menu {
 	display: inline-block;
-	margin-left: 270px;
-	margin-bottom: 30px;
+	margin-left: 225px;
+	margin-bottom: 15px;
 }
 
 .list-menu {
@@ -141,11 +143,11 @@ body {
 	padding-left: 15px;
 }
 
-
 /*SECTION ABOUT US*/
 .about-us {
 	background-color: #ffffff;
-	margin-top: 100px;
+	margin-top: 150px;
+	margin-bottom: 90px;
 }
 
 .for-all-sections {
@@ -221,17 +223,70 @@ body {
 .expertise p {
 	font-size: 15px;
 	line-height: 1.9;
-	margin-bottom: 100px
 }
+
 /*END SECTION ABOUT US*/
 
 /*SECTION PRACTIS AREA*/
 .practis-area {
 	background-color: #111111;
+	color:#ffffff; 
+	padding-top: 80px;
+	padding-bottom: 40px;
 }
 
-.practis-area header * {
-	color:#ffffff;
+.practis-area-list li {
+	display: inline-block;
+	width: 49%;
+	box-sizing: border-box;
+	padding:30px 60px 35px;
 }
 
-/*END PRACTIS AREA*/
+.practis-area-list li span {
+	display: block;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+.practis-area-list li p {
+	font-size: 14px;
+	line-height: 1.5;
+	padding-left: 87px;
+} 
+
+.practis-area-list li:before {
+	content: "";
+	background-repeat: no-repeat;
+	width: 60px;
+    height: 42px;
+    float: left;
+    margin-right: 25px;
+}
+
+.service:before {
+	background-image: url(../image/hands.png);
+}
+
+.employment:before {
+	background-image: url(../image/tool.png);
+}
+
+.sequre:before {
+	background-image: url(../image/sequre.png);
+}
+
+.estate:before {
+	background-image: url(../image/house.png);
+}
+
+.practis-area .for-all-sections:before {
+	opacity: 0.1;
+}
+
+
+
+
+
+
+/*END PRACTIS AREA
