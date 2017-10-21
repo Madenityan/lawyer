@@ -1,4 +1,4 @@
-RESET */
+/*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,6 +45,11 @@ table {
 button {
 	outline-style: none 
 }
+
+ul {
+	padding:0
+
+} 
 /*RESET END*/
 
 .container {
@@ -98,8 +103,8 @@ body {
 }
 
 .welcome-section {
-	height: calc(100vh - 119px);
-	background: url(../image/lawyer.png), url(../image/gradient.png) repeat-x;
+	height: calc(100vh - 104px);
+	background: url(../image/lawyer.png) bottom no-repeat, url(../image/gradient.png) bottom repeat-x;
     background-blend-mode: multiply;
 }
 
@@ -146,8 +151,8 @@ body {
 /*SECTION ABOUT US*/
 .about-us {
 	background-color: #ffffff;
-	margin-top: 150px;
-	margin-bottom: 90px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
 .for-all-sections {
@@ -231,7 +236,7 @@ body {
 .practis-area {
 	background-color: #111111;
 	color:#ffffff; 
-	padding-top: 80px;
+	padding-top: 90px;
 	padding-bottom: 40px;
 }
 
@@ -283,10 +288,319 @@ body {
 .practis-area .for-all-sections:before {
 	opacity: 0.1;
 }
-
-
-
-
-
-
 /*END PRACTIS AREA
+
+/*SECTION ATTORNEY*/
+.attorney {
+	background-color: #ffffff;
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+.list-attorneys li {
+	display: inline-block;
+	text-align: left;
+	margin-right: 27px;
+}
+
+.list-attorneys li:last-child {
+	 margin-right: 0;
+}
+
+.list-attorneys h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.list-attorneys span {
+	font-size: 15px;
+}
+/*SECTION ATTORNEY*/
+
+/*SECTION CLIENTS*/
+.customer-feedback {
+	background: url(../image/bac.png);
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-color: #111111;
+	color:#ffffff;
+	padding-top: 90px;
+	padding-bottom: 140px;
+	opacity: 0.99;
+}
+
+.customer-feedback .for-all-sections:before {
+	opacity: 0.1;
+}
+
+.customer-photo {
+	-webkit-box-shadow: 20px 20px 0px -2px rgba(232,191,93,1);
+	-moz-box-shadow: 20px 20px 0px -2px rgba(232,191,93,1);
+	box-shadow: 20px 20px 0px -2px rgba(232,191,93,1);
+}
+
+.blockquote-client {
+	width: 650px;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 35px;
+}
+
+.blockquote-client:before {
+	content: "";
+	background: url(../image/q.png);
+	background-repeat: no-repeat;
+	width: 31px;
+	height: 25px;
+	display: inline-block;
+}
+
+.blockquote-client p {
+	margin-left: 50px;
+	margin-top: -25px;
+	line-height: 1.8;
+}
+
+.blockquote {
+	padding-bottom: 30px;
+}
+
+.blockquote-client .initials {
+	margin-top: 0px;
+}
+
+.initials {
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+
+.blockquote-client p:last-child {
+	padding-top: 20px;
+	font-size: 15px;
+}
+/*AND SECTION CLIENTS*/
+
+/*SECTION PUBLICATIONS*/
+.publications {
+	background-color: #ffffff;
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+
+.article {
+	display: inline-block;
+	margin-right: 28px;
+	width: 370px;
+	border-bottom: 4px solid #e8bf5d;
+}
+
+.publications .article:last-child {
+	 margin-right: 0;
+}
+
+.image-article {
+	padding-bottom: 30px;
+}
+
+.article h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.author span:first-child {
+	font-style:italic;
+	font-size: 15px;
+}
+
+.short-text { 
+	margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    font-size: 15px;
+ }
+
+.author {
+	text-align: left;
+	width: 180px;
+	display: inline-block;
+}
+
+.date {
+	text-align: right;
+	width: 185px;
+	display: inline-block;
+	font-style:italic;
+}
+
+.comments:before {
+	content: "";
+	background: url(../image/comment.png);
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.share:before {
+	content: "";
+	background: url(../image/share.png);
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.share {
+	border:none;
+	background-color:#ffffff;
+	font-size: 15px;
+	display: inline-block;
+	width: 180px;
+	text-align: right;
+}
+
+.comments {
+	display: inline-block;
+	width: 180px;
+	margin-bottom: 30px;
+}
+/*END SECTION PUBLICATIONS*/
+
+/*SECTION CLASS FAQ*/
+
+.faq {
+	background-color: #111111;
+	color: #ffffff;
+	padding-top: 90px;
+	padding-bottom: 170px;
+}
+
+.faq .for-all-sections:before {
+	opacity: 0.1;
+}
+
+.question {
+	width: 410px;
+	padding: 45px 45px 70px;
+	background-color: #e8bf5d;
+	font-size: 15px;
+	line-height: 1.8;
+	color:#111111;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+/*END SECTION CLASS FAQ*/
+
+/*SECTION CONTACT*/
+.contact {
+	background-color: #ffffff;
+	padding-top: 90px;
+	padding-bottom: 75px;
+}
+
+.form-contact {
+	margin-left: 155px;
+	padding: 51px 33px 51px 51px;
+	width: 870px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 4px 46px 4px rgba(104,86,42,0.37);
+	-moz-box-shadow: 0px 4px 46px 4px rgba(104,86,42,0.37);
+	box-shadow: 0px 4px 46px 4px rgba(104,86,42,0.37);
+
+}
+
+.contact-info {
+	display: inline-block;
+	margin-right: 70px;
+}
+
+.form-contact input {
+	border: none;
+	border-bottom: 1px solid #b9b9b9;
+	width: 380px;
+	height: 60px;
+}
+
+.form-contact input:focus{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #b9b9b9;
+}
+
+.form-contact textarea {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #b9b9b9;
+    height: 120px;
+    resize: none;
+    width: 380px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+::-webkit-input-placeholder { 
+	color: #b9b9b9;
+	font-style:italic;
+	font-size:15px; 
+}
+
+.textarea-message {
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	font-size:15px;  
+}
+
+.button {
+	background: #e8bf5d;
+	border-radius: 40px 40px 40px 40px;
+	font-size: 17px;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+}
+
+.form-contact .button  {
+	width: 170px;
+	height: 50px;
+}
+
+.image-map {
+	-webkit-box-shadow: -25px 24px 0px 0px rgba(232,191,93,1);
+	-moz-box-shadow: -25px 24px 0px 0px rgba(232,191,93,1);
+	 box-shadow: -25px 24px 0px 0px rgba(232,191,93,1);
+	 display: inline-block;
+}
+/*END SECTION CONTACT*/
+
+.footer {
+	background-color: #111111;
+	padding-top: 35px;
+	padding-bottom: 30px;
+}
+
+.footer p {
+	color: #ffffff;
+	font-size: 15px;
+	width: 150px;
+	float:left;
+}
+
+.social-list a {
+	text-decoration: none;
+}
+
+.social-list img {
+	margin-left: 20px;
+	float: right;
+}
+
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear:both;
+}
